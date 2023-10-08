@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image: "maven:3.9.4"
-            registryUrl: "localhost:5000"
+            registryUrl: "http://localhost:5000"
             args: "-v /root/.m2:/root/.m2"
         }
     }
