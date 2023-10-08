@@ -1,9 +1,9 @@
 pipeline {
     agent {
         docker {
-            image: "maven:3.9.4"
-            registryUrl: "http://localhost:5000"
-            args: "-v /root/.m2:/root/.m2"
+            image "maven:3.9.4"
+            registryUrl "http://localhost:5000"
+            args "-v /root/.m2:/root/.m2"
         }
     }
     stages {
